@@ -31,6 +31,8 @@ urlpatterns = [
     path('images/', include('images.urls', namespace='images')),
     path('recipe_images/', include('recipe_images.urls', namespace='recipe_images')),
     path('__debug__/', include('debug_toolbar.urls')),
+    path('cart/', include('cart.urls', namespace='cart')),
+    path('', include('shop.urls', namespace='shop')),
 ]
 
 if settings.DEBUG:
