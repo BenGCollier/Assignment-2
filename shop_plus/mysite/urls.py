@@ -32,6 +32,7 @@ urlpatterns = [
     path('recipe_images/', include('recipe_images.urls', namespace='recipe_images')),
     path('__debug__/', include('debug_toolbar.urls')),
     path('cart/', include('cart.urls', namespace='cart')),
+    path('orders/', include('orders.urls', namespace='orders')),
     path('', include('shop.urls', namespace='shop')),
 ]
 
