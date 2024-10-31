@@ -135,8 +135,12 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en'
 
 LANGUAGES = [
- ('en', _('English')),
- ('es', _('Spanish')),
+    ('en', _('English')),
+    ('es', _('Spanish')),
+]
+
+LOCALE_PATHS = [
+ BASE_DIR / 'locale',
 ]
 
 TIME_ZONE = 'UTC'
@@ -210,7 +214,3 @@ STRIPE_PUBLISHABLE_KEY = config('STRIPE_PUBLISHABLE_KEY')
 STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
 STRIPE_API_VERSION = '2024-04-10'
 STRIPE_WEBHOOK_SECRET = config('STRIPE_WEBHOOK_SECRET')
-
-LOCALE_PATHS = [
- BASE_DIR / 'locale',
-]
