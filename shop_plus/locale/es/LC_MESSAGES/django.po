@@ -8,24 +8,115 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-31 03:54-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-10-31 04:36-0500\n"
+"PO-Revision-Date: 2024-10-31 05:01+0000\n"
+"Last-Translator: Ben Collier <benjamincollier18@icloud.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
-"1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\mysite\settings.py:138
+#: .\cart\forms.py:11 .\cart\templates\cart\detail.html:15
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: .\cart\templates\cart\detail.html:5 .\cart\templates\cart\detail.html:9
+msgid "Your shopping cart"
+msgstr "Su carro"
+
+#: .\cart\templates\cart\detail.html:13
+#: .\new_env\Lib\site-packages\django\db\models\fields\files.py:400
+msgid "Image"
+msgstr "Imagen"
+
+#: .\cart\templates\cart\detail.html:14
+msgid "Product"
+msgstr "Producto"
+
+#: .\cart\templates\cart\detail.html:16 .\cart\templates\cart\detail.html:42
+msgid "Remove"
+msgstr "Eliminar"
+
+#: .\cart\templates\cart\detail.html:17
+msgid "Unit price"
+msgstr "Precio unitario"
+
+#: .\cart\templates\cart\detail.html:18
+msgid "Price"
+msgstr "Precio"
+
+#: .\cart\templates\cart\detail.html:36
+msgid "Update"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:53
+msgid "Subtotal"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:59
+#, python-format
+msgid ""
+"\n"
+"              \"%(code)s\" coupon (%(discount)s%% off)\n"
+"            "
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:70
+msgid "Total"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:81
+#: .\shop\templates\shop\product\detail.html:27
+msgid "People who bought this also bought"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:94
+msgid "Apply a coupon"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:97
+msgid "Apply"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:101
+msgid "Continue shopping"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:102
+msgid "Checkout"
+msgstr ""
+
+#: .\coupons\forms.py:5
+msgid "Coupon"
+msgstr "Cupón"
+
+#: .\mysite\settings.py:140
 msgid "English"
 msgstr "Inglés"
 
-#: .\mysite\settings.py:139
+#: .\mysite\settings.py:141
 msgid "Spanish"
 msgstr "Español"
+
+#: .\mysite\urls.py:36
+msgid "cart/"
+msgstr "carro/"
+
+#: .\mysite\urls.py:37
+msgid "orders/"
+msgstr "pedidos/"
+
+#: .\mysite\urls.py:38
+msgid "payment/"
+msgstr "pago/"
+
+#: .\mysite\urls.py:39
+#| msgid "Coupon"
+msgid "coupons/"
+msgstr "cupon/"
 
 #: .\new_env\Lib\site-packages\click\_termui_impl.py:518
 #, python-brace-format
@@ -366,8 +457,8 @@ msgstr ""
 
 #: .\new_env\Lib\site-packages\django\core\validators.py:267
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
 
 #: .\new_env\Lib\site-packages\django\core\validators.py:279
@@ -573,15 +664,15 @@ msgstr ""
 #: .\new_env\Lib\site-packages\django\db\models\fields\__init__.py:1546
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: .\new_env\Lib\site-packages\django\db\models\fields\__init__.py:1554
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: .\new_env\Lib\site-packages\django\db\models\fields\__init__.py:1559
@@ -600,8 +691,8 @@ msgstr ""
 #: .\new_env\Lib\site-packages\django\db\models\fields\__init__.py:1849
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
 #: .\new_env\Lib\site-packages\django\db\models\fields\__init__.py:1853
@@ -720,10 +811,6 @@ msgstr ""
 msgid "File"
 msgstr ""
 
-#: .\new_env\Lib\site-packages\django\db\models\fields\files.py:400
-msgid "Image"
-msgstr ""
-
 #: .\new_env\Lib\site-packages\django\db\models\fields\json.py:26
 msgid "A JSON object"
 msgstr ""
@@ -760,7 +847,8 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: .\new_env\Lib\site-packages\django\forms\boundfield.py:185
 msgid ":?.!"
 msgstr ""
@@ -810,7 +898,8 @@ msgstr ""
 
 #: .\new_env\Lib\site-packages\django\forms\fields.py:633
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -917,7 +1006,8 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: .\new_env\Lib\site-packages\django\forms\models.py:1448
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: .\new_env\Lib\site-packages\django\forms\models.py:1587
@@ -1377,10 +1467,10 @@ msgstr ""
 
 #: .\new_env\Lib\site-packages\django\views\csrf.py:45
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
 "rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
@@ -1432,8 +1522,8 @@ msgstr ""
 #: .\new_env\Lib\site-packages\django\views\generic\dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: .\new_env\Lib\site-packages\django\views\generic\dates.py:692
@@ -1491,10 +1581,10 @@ msgstr ""
 #: .\new_env\Lib\site-packages\django\views\templates\default_urlconf.html:221
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" "
-"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-"configured any URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
 
 #: .\new_env\Lib\site-packages\django\views\templates\default_urlconf.html:229
@@ -1534,4 +1624,63 @@ msgstr ""
 #: .\new_env\Lib\site-packages\kombu\transport\qpid.py:1334
 #, python-format
 msgid "Unable to connect to qpid with SASL mechanism %s"
+msgstr ""
+
+#: .\payment\urls.py:9
+msgid "process/"
+msgstr "processar/"
+
+#: .\payment\urls.py:10
+msgid "completed/"
+msgstr "completado/"
+
+#: .\payment\urls.py:11
+msgid "canceled/"
+msgstr "cancelado/"
+
+#: .\shop\templates\shop\base.html:6 .\shop\templates\shop\base.html:11
+msgid "My shop"
+msgstr "Mi tienda"
+
+#: .\shop\templates\shop\base.html:16
+msgid "Language"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:34
+msgid "Your cart"
+msgstr "Tu carrito"
+
+#: .\shop\templates\shop\base.html:36
+#, python-format
+msgid ""
+"\n"
+"                %(items)s item, $%(total)s\n"
+"              "
+msgid_plural ""
+"\n"
+"                %(items)s items, $%(total)s\n"
+"              "
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: .\shop\templates\shop\base.html:43
+msgid "Your cart is empty."
+msgstr "Tu carrito está vacío."
+
+#: .\shop\templates\shop\product\detail.html:21
+msgid "Add to cart"
+msgstr ""
+
+#: .\shop\templates\shop\product\list.html:5
+#: .\shop\templates\shop\product\list.html:23
+msgid "Products"
+msgstr "Productos"
+
+#: .\shop\templates\shop\product\list.html:10
+msgid "Categories"
+msgstr "Categorias"
+
+#: .\shop\templates\shop\product\list.html:13
+msgid "All"
 msgstr ""
