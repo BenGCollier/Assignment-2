@@ -55,13 +55,14 @@ INSTALLED_APPS = [
     'actions.apps.ActionsConfig',
     'debug_toolbar',
     'recipe_images.apps.RecipeImagesConfig',
+    'localflavor',
+    'parler',
+    'rosetta',
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
     'payment.apps.PaymentConfig',
     'coupons.apps.CouponsConfig',
-    'rosetta',
-    'parler',
 ]
 
 MIDDLEWARE = [
@@ -225,5 +226,5 @@ PARLER_LANGUAGES = {
     'default': {
         'fallback': 'en',
         'hide_untranslated': False,
-    }
+    },
 }
